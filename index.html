@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Title</title>
+
+  <!--=============== FAVICON ===============-->
+
+
+  <!--=============== ICON ===============-->
+  <!-- Icon 7 stroke -->
+  <link rel="stylesheet" href="icon/css/pe-icon-7-stroke.css">
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/26247fbad5.js" crossorigin="anonymous"></script>
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <!--=============== HEADER START ===============-->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#home">NIPRO AGENCY</a>
+        <!-- Nav search -->
+        <div class="nav-search nav-search-2">
+          <i class="ri-search-line"></i>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#welcome">Service</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Conatct</a>
+            </li>
+          </ul>
+          <!-- Nav search -->
+          <div class="nav-search nav-search-1" data-bs-toggle="modal" data-bs-target="#searchBar">
+            <i class="ri-search-line"></i>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search bar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="searchBar" tabindex="-1" aria-labelledby="searchBarLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="searchBarLabel">SearchBar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- <input type="text" class="form-control" placeholder="Search anything you want"> -->
+            <div class="input-group w-100">
+              <div class="form-outline flex-grow-1">
+                <input type="search" class="form-control w-100" placeholder="Type your query here..." />
+              </div>
+              <button type="button" class="btn btn-primary">
+                <i class="ri-search-line"></i>
+              </button>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Search <i class="ri-search-line ms-2"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!--=============== HEADER END ===============-->
+
+
+  <!--=============== HOME START ===============-->
+  <section class="home-section" id="home">
+    <div class="container home-container">
+
+      <div id="homeCarouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item home-carousel-item js-carousel-item-1 active">
+            <h1 class="home-title">
+              We Have Talented Team
+            </h1>
+            <p class="home-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. hello Lorem Ipsum has been the
+              industry's stanard dummy text ever since the hello bossLorem Ipsum is simply dummy text of the printing
+            </p>
+            <a href="#" class="home-btn btn-style">
+              LEARN MORE <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="carousel-item home-carousel-item js-carousel-item-2">
+            <h1 class="home-title">
+              We Have Talented Team
+            </h1>
+            <p class="home-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. hello Lorem Ipsum has been the
+              industry's stanard dummy text ever since the hello bossLorem Ipsum is simply dummy text of the printing
+            </p>
+            <a href="#" class="home-btn btn-style">
+              LEARN MORE <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="carousel-item home-carousel-item js-carousel-item-3">
+            <h1 class="home-title">
+              We Have Talented Team
+            </h1>
+            <p class="home-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. hello Lorem Ipsum has been the
+              industry's stanard dummy text ever since the hello bossLorem Ipsum is simply dummy text of the printing
+            </p>
+            <a href="#" class="home-btn btn-style">
+              LEARN MORE <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="home-action d-flex gap-3">
+        <span class="home-prev" data-bs-target="#homeCarouselAutoplaying" data-bs-slide="prev">PREV</span>
+        <div class="home-indicators d-flex gap-1">
+          <span class="indicators js-indicator-1 indicator-active"></span>
+          <span class="indicators js-indicator-2"></span>
+          <span class="indicators js-indicator-3"></span>
+        </div>
+        <span class="home-next" data-bs-target="#homeCarouselAutoplaying" data-bs-slide="next">NEXT</span>
+      </div>
+    </div>
+  </section>
+  <!--=============== HOME END ===============-->
+
+
+  <!--=============== WELCOME START ===============-->
+  <section class="welcome-section" id="welcome">
+    <div class="container welcome-container">
+      <div class="welcome-top">
+        <h2 class="section-title welcome-title text-uppercase">
+          Welcome to Nipro
+        </h2>
+        <p class="section-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever he to since the 1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book. It has survived not centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the er including versions of Lorem Ipsum.
+        </p>
+      </div>
+
+      <div class="welcome-bottom row justify-content-center align-items-center row-gap-5">
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center mb-4">
+          <div class="card welcome-card">
+            <div class="card-body welcome-card-body">
+              <div class="welcome-card-icon">
+                <i class="pe-7s-diamond"></i>
+              </div>
+              <h5 class="card-title welcome-card-title text-center text-uppercase">Branding</h5>
+              <p class="card-text welcome-card-text text-center">Lorem Ipsum is simply dummy text of the printing
+                typeset industry.</p>
+              <a href="#" class="card-link welcome-card-link text-center d-block">MORE <i
+                  class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center mb-4">
+          <div class="card welcome-card">
+            <div class="card-body welcome-card-body">
+              <div class="welcome-card-icon welcome-card-icon-2">
+                <i class="pe-7s-rocket"></i>
+              </div>
+              <h5 class="card-title welcome-card-title text-center text-uppercase">Branding</h5>
+              <p class="card-text welcome-card-text text-center">Lorem Ipsum is simply dummy text of the printing
+                typeset industry.</p>
+              <a href="#" class="card-link welcome-card-link text-center d-block">MORE <i
+                  class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center mb-4">
+          <div class="card welcome-card">
+            <div class="card-body welcome-card-body">
+              <div class="welcome-card-icon welcome-card-icon-3">
+                <i class="pe-7s-ribbon"></i>
+              </div>
+              <h5 class="card-title welcome-card-title text-center text-uppercase">Branding</h5>
+              <p class="card-text welcome-card-text text-center">Lorem Ipsum is simply dummy text of the printing
+                typeset industry.</p>
+              <a href="#" class="card-link welcome-card-link text-center d-block">MORE <i
+                  class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center mb-4">
+          <div class="card welcome-card">
+            <div class="card-body welcome-card-body">
+              <div class="welcome-card-icon welcome-card-icon-4">
+                <i class="pe-7s-shield"></i>
+              </div>
+              <h5 class="card-title welcome-card-title text-center text-uppercase">Branding</h5>
+              <p class="card-text welcome-card-text text-center">Lorem Ipsum is simply dummy text of the printing
+                typeset industry.</p>
+              <a href="#" class="card-link welcome-card-link text-center d-block">MORE <i
+                  class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=============== WELCOME END ===============-->
+
+  <!--=============== ABOUT START ===============-->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="row about-row">
+
+        <div class="col-lg-6 about-left">
+          <img class="about-img" src="images/about-image.png" alt="image">
+        </div>
+
+        <div class="col-lg-6 about-right">
+          <h2 class="section-title about-title text-uppercase text-start">
+            About US
+          </h2>
+          <p class="section-text about-text text-start">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industr hello Ipsum has been the industry's
+            standard dummy text ever since the 1500s, ian unknown printer took a galley omen book. It has survived not
+            only five ies, but also the leap into electronic typesetting, remaining essentially un also the leap into
+            electronic typesetting, remaining essentially
+          </p>
+          <p class="section-text about-text text-start">
+            with the release of Letraset sheets containing Lorem Ipsum passages, heo and more recently with desktop
+            publishing software like A PageMaker including versions of Lorem Ipsum.
+          </p>
+
+          <a href="#" class="btn-style about-btn">
+            LEARN MORE <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--=============== ABOUT END ===============-->
+
+
+  <!--=============== PORTFOLIO START ===============-->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container portfolio container">
+
+      <h2 class="section-title portfolio title text-uppercase">
+        Recent Work
+      </h2>
+
+      <div class="project-name-container">
+        <ul class="nav nav-tabs project-name-list d-flex flex-wrap gap-3 justify-content-center mb-5" id="projectTabs"
+          role="tablist">
+
+          <li class="nav-item" role="presentation">
+            <button class="project-name js-project-name active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+              type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="project-name js-project-name" id="app-design-tab" data-bs-toggle="tab"
+              data-bs-target="#app-design" type="button" role="tab" aria-controls="app-design" aria-selected="false">APP
+              DESIGN</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="project-name js-project-name" id="web-design-tab" data-bs-toggle="tab"
+              data-bs-target="#web-design" type="button" role="tab" aria-controls="web-design" aria-selected="false">WEB
+              DESIGN</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="project-name js-project-name" id="ui-design-tab" data-bs-toggle="tab"
+              data-bs-target="#ui-design" type="button" role="tab" aria-controls="ui-design" aria-selected="false">UI
+              DESIGN</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="project-name js-project-name" id="photoshop-tab" data-bs-toggle="tab"
+              data-bs-target="#photoshop" type="button" role="tab" aria-controls="photoshop"
+              aria-selected="false">PHOTOSHOP</button>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="tab-content" id="projectTabsContent">
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+          <!-- All projects go here -->
+          <div class="project-image-container row g-4">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="app-design" role="tabpanel" aria-labelledby="app-design-tab">
+          <!-- App Design projects go here -->
+          <div class="project-image-container row g-4">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="web-design" role="tabpanel" aria-labelledby="web-design-tab">
+          <!-- Web Design projects go here -->
+          <div class="project-image-container row g-4">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="ui-design" role="tabpanel" aria-labelledby="ui-design-tab">
+          <!-- UI Design projects go here -->
+          <div class="project-image-container row g-4">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="photoshop" role="tabpanel" aria-labelledby="photoshop-tab">
+          <!-- Photoshop projects go here -->
+          <div class="project-image-container row g-4">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="project-image">
+                <img src="images/Protfolio-1.png" alt="">
+
+                <div class="project-modal d-flex flex-column justify-content-between">
+
+                  <div class="project-link d-flex justify-content-center align-items-center">
+                    <a class="d-flex justify-content-center align-items-center text-center" href="#">
+                      <i class="ri-add-line"></i>
+                    </a>
+                  </div>
+
+                  <div class="project-details">
+                    <h2 class="project-title">PROJECT TITLE</h2>
+                    <h3 class="project-subtitle">App Design</h3>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--=============== PORTFOLIO END ===============-->
+
+
+  <!--=============== WHY START ===============-->
+  <section class="why-section">
+    <div class="container why-container">
+
+      <h2 class="section-title why-title text-uppercase">
+        Why Choose Nipro
+      </h2>
+
+      <div class="why-card-container row row-gap-5">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card why-card">
+            <div class="card-body">
+              <h5 class="card-title why-card-title text-uppercase d-flex align-items-center">
+                <i class="pe-7s-diamond why-card-icon"></i> Creative Design
+              </h5>
+              <p class="card-text why-card-text">Lorem Ipsum is simply dummy lol Is the printing typesetting industry.
+                Lorem some </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card why-card">
+            <div class="card-body">
+              <h5 class="card-title why-card-title text-uppercase d-flex align-items-center">
+                <i class="pe-7s-diamond why-card-icon"></i> Creative Design
+              </h5>
+              <p class="card-text why-card-text">Lorem Ipsum is simply dummy lol Is the printing typesetting industry.
+                Lorem some </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card why-card">
+            <div class="card-body">
+              <h5 class="card-title why-card-title text-uppercase d-flex align-items-center">
+                <i class="pe-7s-diamond why-card-icon"></i> Creative Design
+              </h5>
+              <p class="card-text why-card-text">Lorem Ipsum is simply dummy lol Is the printing typesetting industry.
+                Lorem some </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card why-card">
+            <div class="card-body">
+              <h5 class="card-title why-card-title text-uppercase d-flex align-items-center">
+                <i class="pe-7s-diamond why-card-icon"></i> Creative Design
+              </h5>
+              <p class="card-text why-card-text">Lorem Ipsum is simply dummy lol Is the printing typesetting industry.
+                Lorem some </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card why-card">
+            <div class="card-body">
+              <h5 class="card-title why-card-title text-uppercase d-flex align-items-center">
+                <i class="pe-7s-diamond why-card-icon"></i> Creative Design
+              </h5>
+              <p class="card-text why-card-text">Lorem Ipsum is simply dummy lol Is the printing typesetting industry.
+                Lorem some </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card why-card">
+            <div class="card-body">
+              <h5 class="card-title why-card-title text-uppercase d-flex align-items-center">
+                <i class="pe-7s-diamond why-card-icon"></i> Creative Design
+              </h5>
+              <p class="card-text why-card-text">Lorem Ipsum is simply dummy lol Is the printing typesetting industry.
+                Lorem some </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!--=============== WHY END ===============-->
+
+
+  <!--=============== WHO START ===============-->
+  <section class="who-section">
+    <div class="container who-container">
+      <div class="row who-row row-gap-5">
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card who-card">
+            <div class="who-card-img-container">
+              <img src="images/who-card-img-1.png" class="card-img-top" alt="image">
+              <div class="who-card-icon-list d-flex flex-column">
+                <a class="who-card-icon" href="#"><i class="ri-facebook-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-twitter-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-dribbble-line"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-instagram-line"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title project-title text-uppercase">Ashiful Haque Pappu</h5>
+              <h3 class="project-subtitle">UI/UX Designer</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card who-card">
+            <div class="who-card-img-container">
+              <img src="images/who-card-img-1.png" class="card-img-top" alt="image">
+              <div class="who-card-icon-list d-flex flex-column">
+                <a class="who-card-icon" href="#"><i class="ri-facebook-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-twitter-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-dribbble-line"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-instagram-line"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title project-title text-uppercase">Ashiful Haque Pappu</h5>
+              <h3 class="project-subtitle">UI/UX Designer</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card who-card">
+            <div class="who-card-img-container">
+              <img src="images/who-card-img-1.png" class="card-img-top" alt="image">
+              <div class="who-card-icon-list d-flex flex-column">
+                <a class="who-card-icon" href="#"><i class="ri-facebook-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-twitter-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-dribbble-line"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-instagram-line"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title project-title text-uppercase">Ashiful Haque Pappu</h5>
+              <h3 class="project-subtitle">UI/UX Designer</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card who-card">
+            <div class="who-card-img-container">
+              <img src="images/who-card-img-1.png" class="card-img-top" alt="image">
+              <div class="who-card-icon-list d-flex flex-column">
+                <a class="who-card-icon" href="#"><i class="ri-facebook-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-twitter-fill"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-dribbble-line"></i></a>
+                <a class="who-card-icon" href="#"><i class="ri-instagram-line"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title project-title text-uppercase">Ashiful Haque Pappu</h5>
+              <h3 class="project-subtitle">UI/UX Designer</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--=============== WHO END ===============-->
+
+
+  <!--=============== START ===============-->
+  <section class="pricing">
+    <div class="container pricing">
+
+      <h2 class="section-title text-uppercase">
+        Best Pricing
+      </h2>
+
+      <div class="pricing-card-container">
+        <div class="row pricing-row row-gap-5">
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card pricing-card">
+              <div class="card-body">
+                <h5 class="card-title pricing-card-title">BASIC</h5>
+
+                <p class="price"><span>$29</span> /Per Month</p>
+
+                <ul class="service-details-list">
+                  <li>1TB Storage</li>
+                  <li>Unlimited Members</li>
+                  <li>50 Project</li>
+                  <li>70GB Bandwidth</li>
+                  <li>24/7 Customer Support</li>
+                </ul>
+
+                <a href="#" class="card-link btn-style price-btn">Card link <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card pricing-card">
+              <div class="card-body">
+                <h5 class="card-title pricing-card-title">Card title</h5>
+
+                <p class="price"><span>$29</span> /Per Month</p>
+
+                <ul class="service-details-list">
+                  <li>1TB Storage</li>
+                  <li>Unlimited Members</li>
+                  <li>50 Project</li>
+                  <li>70GB Bandwidth</li>
+                  <li>24/7 Customer Support</li>
+                </ul>
+
+                <a href="#" class="card-link btn-style price-btn">Card link <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card pricing-card">
+              <div class="card-body">
+                <h5 class="card-title pricing-card-title">Card title</h5>
+
+                <p class="price"><span>$29</span> /Per Month</p>
+
+                <ul class="service-details-list">
+                  <li>1TB Storage</li>
+                  <li>Unlimited Members</li>
+                  <li>50 Project</li>
+                  <li>70GB Bandwidth</li>
+                  <li>24/7 Customer Support</li>
+                </ul>
+
+                <a href="#" class="card-link btn-style price-btn">Card link <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card pricing-card">
+              <div class="card-body">
+                <h5 class="card-title pricing-card-title">Card title</h5>
+
+                <p class="price"><span>$29</span> /Per Month</p>
+
+                <ul class="service-details-list">
+                  <li>1TB Storage</li>
+                  <li>Unlimited Members</li>
+                  <li>50 Project</li>
+                  <li>70GB Bandwidth</li>
+                  <li>24/7 Customer Support</li>
+                </ul>
+
+                <a href="#" class="card-link btn-style price-btn">Card link <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=============== END ===============-->
+
+
+  <!--=============== START ===============-->
+  <section class="founder-section">
+    <div class="container founder-container">
+
+      <div class="row founder-row m-0">
+        <div class="founder-profile col-xl-11">
+          <div id="founderCarouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item founder-carousel-item js-founder-carousel-item-1 active">
+                <div class="founder-profile-carousel">
+                  <img src="images/founder-img-1.png" alt="" class="founder-image">
+
+                  <div class="founder-right">
+                    <h3 class="founder-name project-title">Al-Rayhan</h3>
+                    <p class="founder-subtitle">Co-Founder & COO</p>
+                    <p class="founder-subtitle-2">DeviserWeb</p>
+
+                    <p class="founder-text section-text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book. It has survived not only five
+                    </p>
+
+                    <p class="founder-text section-text">
+                      Lcenturies, but also the leap into electronic typesetting, remaining essentially like Aldus
+                      PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item founder-carousel-item js-founder-carousel-item-2">
+                <div class="founder-profile-carousel">
+                  <img src="images/founder-img-1.png" alt="" class="founder-image">
+
+                  <div class="founder-right">
+                    <h3 class="founder-name project-title">Al-Rayhan</h3>
+                    <p class="founder-subtitle">Co-Founder & COO</p>
+                    <p class="founder-subtitle-2">DeviserWeb</p>
+
+                    <p class="founder-text section-text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book. It has survived not only five
+                    </p>
+
+                    <p class="founder-text section-text">
+                      Lcenturies, but also the leap into electronic typesetting, remaining essentially like Aldus
+                      PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item founder-carousel-item js-founder-carousel-item-3">
+                <div class="founder-profile-carousel">
+                  <img src="images/founder-img-1.png" alt="" class="founder-image">
+
+                  <div class="founder-right">
+                    <h3 class="founder-name project-title">Al-Rayhan</h3>
+                    <p class="founder-subtitle">Co-Founder & COO</p>
+                    <p class="founder-subtitle-2">DeviserWeb</p>
+
+                    <p class="founder-text section-text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book. It has survived not only five
+                    </p>
+
+                    <p class="founder-text section-text">
+                      Lcenturies, but also the leap into electronic typesetting, remaining essentially like Aldus
+                      PageMaker including versions of Lorem Ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-1">
+
+          <div class="founder-profile-action d-flex flex-column justify-content-center align-items-center">
+            <div class="founder-action d-flex flex-column align-items-center">
+
+              <span class="founder-prev" data-bs-target="#founderCarouselAutoplaying" data-bs-slide="prev">PREV</span>
+
+              <div class="founder-indicators d-flex gap-1">
+                <span class="indicators js-founder-indicator-1 indicator-active"></span>
+                <span class="indicators js-founder-indicator-2"></span>
+                <span class="indicators js-founder-indicator-3"></span>
+              </div>
+
+              <span class="founder-next" data-bs-target="#founderCarouselAutoplaying" data-bs-slide="next">NEXT</span>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!--=============== END ===============-->
+
+
+  <!--=============== CONTACT START ===============-->
+  <section class="contact-section" id="contact">
+    <div class="container contact-container">
+
+      <h2 class="section-title contact-title text-uppercase">
+        Contact US
+      </h2>
+
+      <form action="#" method="post" class="contact-form">
+
+        <div class="contact-name">
+          <input type="text" placeholder="First Name" class="first-name form-control">
+          <input type="text" placeholder="Last Name" class="last-name form-control">
+        </div>
+
+        <input type="email" placeholder="Your Email" name="email" class="contact-email form-control">
+        <textarea name="message" placeholder="Your Message..." class="contact-message form-control"></textarea>
+        <button type="submit" class="contact-button btn-style form-control">SEND NOW <i
+            class="ri-arrow-right-line"></i></button>
+      </form>
+    </div>
+  </section>
+  <!--=============== CONTACT END ===============-->
+
+
+  <!--=============== FOOTER START ===============-->
+  <footer class="footer">
+    <div class="container footer-container ">
+
+      <div class="footer-top d-flex justify-content-center align-items-center flex-column gap-4">
+        <h2 class="section-title footer-title text-uppercase">
+          Nipro Agency
+        </h2>
+
+        <p class="section-text footer-text">
+          Lorem Ipsum is simply dummy text of lol he the printing and typesetting industry. Lorem Ipsum Has been the koi
+          jabi mama
+        </p>
+
+        <div class="footer-icon">
+          <div class="footer-icon-group d-flex column-gap-4">
+
+            <ul class="d-flex p-0 gap-4">
+              <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+              <li><a href="#"><i class="ri-dribbble-line"></i></a></li>
+              <li><a href="#"><i class="ri-behance-line"></i></a></li>
+            </ul>
+
+            <ul class="d-flex p-0 gap-4">
+              <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+              <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bootom">
+      <div class="container footer-bootom-container d-flex align-items-center justify-content-between">
+        <p class="copyright-text section-text">
+          All rights reserved NIPRO AGENCY | By : Fahad Islam
+        </p>
+        <div class="footer-links">
+          <ul class="footer-links-group p-0 d-flex column-gap-5 m-0 align-items-center">
+            <li><a class="footer-link" href="#">Support</a></li>
+            <li><a class="footer-link" href="#">Sitemap</a></li>
+            <li><a class="footer-link" href="#">Contact US</a></li>
+            <li><a class="footer-link" href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--=============== FOOTER END ===============-->
+
+  <!-- Scroll Reveal -->
+  <script src="js/scrollreveal.min.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

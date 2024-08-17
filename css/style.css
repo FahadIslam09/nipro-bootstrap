@@ -1,0 +1,816 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+  /*========== Color ==========*/
+  --title-color: #333333;
+  --text-color: #8e8e8e;
+  --body-color: #ffffff;
+  --container-color: #f8f8f8;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Lato", sans-serif;
+  --text-font: "Roboto", sans-serif;
+
+  --title-size: 30px;
+  --title-mobile-size: 24px;
+  --text-size: 16px;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+}
+
+
+/*=============== BASE ===============*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+body {
+  font-family: var(--body-font);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--body-font);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  /* margin: auto; */
+}
+
+section {
+  padding-block: 4.5rem 2.5rem;
+}
+
+p {
+  color: var(--text-color);
+  font-size: var(--text-size);
+  line-height: 1.6rem;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--title-color);
+  font-weight: var(--font-regular);
+  margin-bottom: 3rem;
+}
+
+.section-text {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  margin-bottom: .5rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.card-title {
+  font-size: var(--text-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.btn-style {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-family: var(--text-size);
+  font-weight: var(--font-semi-bold);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/*=============== HEADER & NAV START ===============*/
+
+.navbar {
+  background-color: var(--body-color);
+  padding-block: 22px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: var(--font-medium);
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--title-color);
+}
+
+.nav-search {
+  margin-left: 20px;
+  font-size: 20px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-search:hover {
+  color: var(--title-color);
+}
+/*=============== HEADER & NAV END ===============*/
+
+
+/*=============== HOME START ===============*/
+.home-section {
+  background: url(../images/home-banner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-block: 13rem;
+  /* background-size: cover; */
+  position: relative;
+}
+
+.home-title {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: var(--font-semi-bold);
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.home-text {
+  font-family: var(--text-font);
+  color: #ffffff;
+  font-weight: var(--font-regular);
+  width: 620px;
+  margin-bottom: 50px;
+}
+
+.home-btn {
+  background-color: #fff;
+  color: #333333;
+}
+
+.home-btn i {
+  font-size: 18px;
+}
+
+.home-action {
+  position: absolute;
+  bottom: 15px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.home-prev,
+.home-next {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  transition: color .3s;
+}
+
+.home-prev:hover,
+.home-next:hover {
+  color:var(--title-color);
+}
+
+.home-indicators * {
+  display: block;
+  width: 2.8px;
+  height: 18px;
+  color: var(--text-color);
+  background-color: var(--text-color);
+}
+
+.indicator-active {
+  background-color: var(--title-color);
+}
+
+/* Carousel Item Transition */
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Home Indicator Transition */
+.indicators {
+  transition: background-color 0.3s ease-in-out; 
+}
+
+/*=============== HOME END ===============*/
+
+
+/*=============== WELCOME START ===============*/
+.welcome-top {
+  margin-bottom: 100px;
+}
+
+.welcome-card {
+  padding-block: 50px 20px;
+  border-color: var(--text-color);
+  position: relative;
+  transition: border-color .3s;
+}
+
+.welcome-card:hover {
+  border-color: var(--title-color);
+}
+
+.welcome-card-title {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  position: relative;
+  transition: color .3s;
+}
+
+.welcome-card:hover .welcome-card-title {
+  color: var(--title-color);
+}
+
+.welcome-card:hover .welcome-card-link {
+  color: var(--title-color);
+}
+
+.welcome-card-title::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background-color: var(--text-color);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.welcome-card-text {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.welcome-card-link {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .3s;
+}
+
+.welcome-card-link i {
+  margin-left: 7px;
+}
+
+.welcome-card-link:hover {
+  color: var(--title-color);
+}
+
+.welcome-card-icon {
+  font-size:  60px;
+  color: var(--text-color);
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--body-color);
+  padding: 0 10px;
+}
+
+.welcome-card:hover .welcome-card-icon i {
+  transition: color .3s;
+  color: var(--title-color);
+}
+
+.welcome-card-icon-2 {
+  top: -40px;
+}
+
+.welcome-card-icon-3 {
+  top: -38px;
+}
+
+.welcome-card-icon-4 {
+  top: -38px;
+}
+/*=============== WELCOME END ===============*/
+
+
+/*=============== ABOUT START ===============*/
+.about-section {
+  padding-bottom: 120px;
+}
+
+.about-title,
+.about-text {
+  margin-bottom: 40px;
+}
+
+.about-right > p:first-of-type {
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  margin-top: -6px;
+  transition: all .3s;
+}
+
+.about-btn:hover {
+  border: 2px solid var(--title-color);
+  color: var(--title-color);
+}
+/*=============== ABOUT END ===============*/
+
+
+/*=============== PORTFOLIO START ===============*/
+.portfolio-section {
+  background-color: var(--container-color);
+  padding-bottom: 80px;
+}
+
+.project-name {
+  font-weight: 500; /* Bootstrap's font-weight utility */
+  background-color: transparent;
+  color: #8e8e8e;
+  padding: 10px 15px; /* Adjust padding to make it more responsive */
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.project-name:hover,
+.project-name-active {
+  border-color: #333;
+  color: #333;
+}
+
+
+/*  */
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-modal {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #3333337c;
+  transition: bottom .4s;
+}
+
+.project-image:hover .project-modal {
+  bottom: 0;
+}
+
+.project-link {
+  height: 100%;
+}
+
+.project-link a {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 200;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px; 
+  padding: 10px;
+  line-height: 40px;
+}
+
+.project-details {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.project-subtitle {
+  font-size: 16px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.nav-tabs {
+  border: none;
+}
+/*=============== PORTFOLIO END ===============*/
+
+
+/*=============== WHY START ===============*/
+.why-card {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--text-color);
+  transition: border-color .3s;
+}
+
+.why-card:hover {
+  border-color: var(--title-color);
+}
+
+.why-card.card:hover .why-card-title,
+.why-card.card:hover .why-card-text {
+  transition: color .3s;
+  color: var(--title-color);
+}
+
+.why-card-title {
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.why-card-icon {
+  margin-right: 25px;
+  font-size: 50px;
+}
+
+.why-card-text {
+  margin-bottom: 30px !important;
+}
+/*=============== WHY END ===============*/
+
+
+/*=============== WHO START ===============*/
+.who-section {
+  background: url(../images/who-works-with-us-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.who-container {
+  padding-block: 4rem 3rem;
+}
+
+.who-card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.who-card-icon-list {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  transform: translateY(-50%);
+  background-color: var(--body-color);
+  font-size: 25px;
+  transition: left .25s ease-in-out;
+}
+
+.who-card:hover .who-card-icon-list {
+  left: 0;
+}
+
+.who-card-icon {
+  padding: 5px 8px;
+  border-right: 1px solid transparent;
+  transition: all .3s;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.who-card-icon:hover {
+  color: var(--title-color);
+  background-color: #c5c4c4bb;
+  border-right-color: var(--title-color);
+}
+/*=============== WHO END ===============*/
+
+
+/*=============== PRICING START ===============*/
+.pricing-card {
+  border: 1px solid #cccccc;
+  position: relative;
+  padding: 40px 20px 30px;
+  transition: all 0.3s;
+}
+
+.pricing-card:hover {
+  border-color: var(--title-color);
+}
+
+.pricing-card-title {
+  font-size: 18px;
+  position: absolute;
+  top: -10px;
+  z-index: 10;
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 36px;
+  color: var(--title-color);
+  margin-right: 5px;
+}
+
+.service-details-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.service-details-list {
+  padding-left: 0;
+}
+
+.price-btn {
+  margin-top: 40px;
+  color: var(--text-color);
+  border: 1px solid #cccccc;
+  transition: all .3s;
+}
+
+.pricing-card:hover .price-btn {
+  color: var(--title-color);
+  border-color: var(--title-color);
+  background-color: var(--container-color);
+}
+/*=============== PRICING END ===============*/
+
+
+
+/*=============== FOUNDER START ===============*/
+
+.founder-profile {
+  border: 1px solid #cccccc;
+}
+
+.founder-carousel-item {
+  padding: 40px 30px;
+}
+
+.founder-profile-carousel {
+  display: flex;
+  column-gap: 30px;
+}
+
+.founder-name,
+.founder-subtitle-2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.founder-subtitle {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.founder-text {
+  text-align: left;
+}
+
+/* Founder Action */
+.founder-indicators * {
+  display: block;
+  width: 2.8px;
+  height: 18px;
+  color: var(--text-color);
+  background-color: var(--text-color);
+}
+
+.indicator-active {
+  background-color: var(--title-color);
+}
+
+/* Founder Action */
+.founder-profile-action {
+  height: 100%;
+}
+
+.founder-action {
+  background-color: var(--container-color);
+  border: 1px solid #cccccc;
+  padding: 0 24px;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.founder-prev,
+.founder-next {
+  writing-mode: vertical-rl;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.founder-prev:hover,
+.founder-next:hover {
+  color: var(--title-color);
+}
+
+.founder-indicators {
+  rotate: 90deg;
+}
+/*=============== FOUNDER END ===============*/
+
+
+
+/*=============== CONTACT START ===============*/
+.contact-container {
+  position: relative;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 60px;
+}
+
+.contact-title {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--body-color);
+  padding: 0 10px;
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.contact-name {
+  display: flex;
+  column-gap: 30px;
+}
+
+.contact-form input,
+.contact-message {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #cccccc;
+  transition: all .3s;
+}
+
+.contact-form input:focus,
+.contact-message:focus {
+  border: none;
+  border-bottom: 1px solid #333 !important;
+  outline: 0;
+  box-shadow: none;
+}
+
+.contact-form input::placeholder {
+  font-family: var(--text-font);
+  font-weight: var(--font-regular);
+  color: var(--text-color);
+}
+
+.contact-form input:focus::placeholder {
+  transition: 0.3s;
+  color: var(--title-color);
+}
+
+.contact-name input,
+.contact-email {
+  padding: 0 25px 15px;
+}
+
+.contact-message {
+  padding: 0 25px 60px;
+}
+
+.contact-button {
+  
+  margin: auto;
+  border: 1px solid var(--text-color);
+  border-radius: 0;
+  color: var(--text-color);
+  transition: all .3s;
+  margin-top: 10px;
+}
+
+.contact-button:hover {
+  color: var(--title-color);
+  border-color: var(--title-color);
+}
+/*=============== CONTACT END ===============*/
+
+
+
+/*=============== FOOTER START ===============*/
+.footer {
+  background: url(../images/footer-ackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 3rem;
+}
+
+.footer-title {
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  color: var(--body-color);
+  width: 25%;
+}
+
+.footer-icon {
+  /* display: flex; */
+  /* gap: 20px; */
+  color: var(--body-color);
+}
+
+.footer-icon a {
+  color: var(--body-color);
+  border: 1px solid var(--body-color);
+  padding: 10px 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-icon a:hover {
+  background-color: var(--body-color);
+  color: #000;
+  border-color: #000;
+}
+
+.footer-bootom {
+  margin-top: 65px;
+  border-top: 1px solid #cccccc;
+  padding-block: 2rem;
+}
+
+.footer-link,
+.copyright-text {
+  color: var(--body-color);
+}
+
+.copyright-text {
+  margin-bottom: 0;
+}
+
+/*=============== FOOTER END ===============*/
